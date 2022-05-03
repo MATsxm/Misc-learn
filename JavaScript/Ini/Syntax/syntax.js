@@ -167,3 +167,22 @@ for (let x = 0; x < 10; x++) {
     }
     console.log(x);
 }
+
+// 13. Les tableaux
+let tab = [`Bob`, `Max`, `Tom`, 123]; // Tableaux définis par crochets
+console.log(tab[0]);    // Bob
+console.log(tab[3]);    // 123
+tab[2] = 12;
+console.log(tab);       // ["Bob", "Max", 12, 123]
+tab[5] = 15;
+console.log(tab);       // ["Bob", "Max", 12, 123, ..., 15]
+
+// Parcours avec for
+for (let i = 0; i < tab.length; i++) {
+    console.log(tab[i]);
+}
+
+// Parcours avec for / of
+for (let e of tab) {
+    console.log(e);
+}
