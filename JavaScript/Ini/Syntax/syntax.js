@@ -186,3 +186,8 @@ for (let i = 0; i < tab.length; i++) {
 for (let e of tab) {
     console.log(e);
 }
+
+// 14. Les tableaux multi-dimensions
+let tab2D = [[10, 20, 30], [1, 2]];
+console.log(tab2D[0][2]); // 30 
+console.log(tab2D[1][1]); // 2
