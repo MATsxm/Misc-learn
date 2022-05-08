@@ -10,4 +10,8 @@ contract ZombieFactory {
         string name;
         uint256 dna;
     }
+
+    Zombie[] public zombies;
+
+    function createZombie(string memory _name, uint256 _dna) public {}
 }
