@@ -194,3 +194,17 @@ for (const e of tab2D) {
         console.log(e2);
     }    
 }
+// Parcours d'un tableau à 2 dimensions
+for (const e of tab2D) {
+    for (const e2 of e) {
+        console.log(e2);
+    }    
+}
+
+// 15. Destructuring assignment
+let aa, ab, ac;
+[aa, ab] = [1, 2];
+[aa, ab, ac] = [3, 4];
+[aa, ab, ac = 0] = [3, 4];
+[aa, , ac] = [7, 8, 9];
+[aa, ab] = [ab, aa];
