@@ -1,7 +1,13 @@
-pragma solidity ^0.4.19;
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.7;
 
 contract ZombieFactory {
+    uint256 dnaDigits = 16;
+    uint256 dnaModulus = 10**dnaDigits;
 
-    // commencez ici
-
+    struct Zombie {
+        string name;
+        uint256 dna;
+    }
 }
