@@ -159,6 +159,7 @@ for (let x = 0; x < 10; x++) {
     }
     console.log(x);
 }
+
 // Rupture Continuebreak
 for (let x = 0; x < 10; x++) {
     if (x % 2 === 0) {          // modulo vaut les chiffres paires
@@ -175,10 +176,12 @@ tab[2] = 12;
 console.log(tab);       // ["Bob", "Max", 12, 123]
 tab[5] = 15;
 console.log(tab);       // ["Bob", "Max", 12, 123, ..., 15]
+
 // Parcours avec for
 for (let i = 0; i < tab.length; i++) {
     console.log(tab[i]);
 }
+
 // Parcours avec for / of
 for (let e of tab) {
     console.log(e);
@@ -188,12 +191,7 @@ for (let e of tab) {
 let tab2D = [[10, 20, 30], [1, 2]];
 console.log(tab2D[0][2]); // 30 
 console.log(tab2D[1][1]); // 2
-// Parcours d'un tableau à 2 dimensions
-for (const e of tab2D) {
-    for (const e2 of e) {
-        console.log(e2);
-    }    
-}
+
 // Parcours d'un tableau à 2 dimensions
 for (const e of tab2D) {
     for (const e2 of e) {
@@ -208,3 +206,21 @@ let aa, ab, ac;
 [aa, ab, ac = 0] = [3, 4];
 [aa, , ac] = [7, 8, 9];
 [aa, ab] = [ab, aa];
+
+// 16. Les fonctions
+function bravo(prenom, points) {
+    console.log(`Bravo ${prenom}, vous avez gagné ${points} points !`);
+}
+
+bravo(`MAT`, 40);
+bravo(`SXM`, 100);
+
+
+// Autre exemple avec return
+function bravo(prenom, points) {
+    console.log(`Bravo ${prenom}, vous avez gagné ${points} points !`);
+    return Math.round(Math.random() * 100);            // random est un nombre aléatoire entre 0 inclus et 1 exclus
+}                                                      // round est l'arrondi
+
+let bonus = bravo(`MAT`, 50);
+console.log(`Vous avez un bonus de ${bonus} points`);
