@@ -215,7 +215,6 @@ function bravo(prenom, points) {
 bravo(`MAT`, 40);
 bravo(`SXM`, 100);
 
-
 // Autre exemple avec return
 function bravo(prenom, points) {
     console.log(`Bravo ${prenom}, vous avez gagné ${points} points !`);
@@ -224,3 +223,14 @@ function bravo(prenom, points) {
 
 let bonus = bravo(`MAT`, 50);
 console.log(`Vous avez un bonus de ${bonus} points`);
+
+// 17. Hosting et Scope
+// Hoisting
+// Scope
+function f() {
+    let n1 = 0;          // 0 est encapsulé dans le bloc {}
+    console.log(n1);
+}
+let n1 = 3;
+f();
+console.log(n1);
