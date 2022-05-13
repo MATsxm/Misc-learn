@@ -234,3 +234,20 @@ function f() {
 let n1 = 3;
 f();
 console.log(n1);
+
+// 18. Paramètres par défaut et rest parameter
+// paramètre par défaut
+
+function somme(a1, b1, c1) {
+    return a1 + b1 + c1;
+}
+console.log(somme(12, 8, 13)); // 33
+console.log(somme(12, 8)); // NaN
+
+function somme(a2, b2, c2 = 0) {   // valeur par défaut 0
+    return a2 + b2 + c2;
+}
+console.log(somme(12, 8, 13)); // 33
+console.log(somme(12, 8)); // 20
+
+// rest parameter
