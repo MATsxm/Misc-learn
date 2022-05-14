@@ -251,3 +251,13 @@ console.log(somme(12, 8, 13)); // 33
 console.log(somme(12, 8)); // 20
 
 // rest parameter
+function moyenne(prenom, ...notes) {    // ... permet d'affecter plusieurs éléments à une seule variable
+    let somme = 0;
+    for (let note of notes) {
+        somme += note;
+    }
+    let moyenne = (somme / notes.length) || 0; // Short-circuit operator pour éviter le NaN avec aucune note
+    console.log(prenom, moyenne);
+}
+moyenne(`Bob`, 12, 8, 13);
+moyenne(`Bob`);
