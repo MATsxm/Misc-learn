@@ -261,3 +261,5 @@ function moyenne(prenom, ...notes) {    // ... permet d'affecter plusieurs élé
 }
 moyenne(`Bob`, 12, 8, 13);
 moyenne(`Bob`);
+
+// 19. Fonctions
