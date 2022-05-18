@@ -262,7 +262,7 @@ function moyenne(prenom, ...notes) {    // ... permet d'affecter plusieurs élé
 moyenne(`Bob`, 12, 8, 13);
 moyenne(`Bob`);
 
-// 19. Fonctions variadiques et spread parametor
+// 19. Fonctions variadiques et spread operator
 function moy() {
     let somme = 0;
     for (let i = 0; i < arguments.length; i++) {
@@ -272,3 +272,4 @@ function moy() {
     console.log(moyenne)
 }
 moy(12, 8, 13);
+// Spread operator
