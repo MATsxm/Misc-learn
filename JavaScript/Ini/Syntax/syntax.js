@@ -272,4 +272,5 @@ function moy() {
     console.log(moyenne)
 }
 moy(12, 8, 13);
+moy();
 // Spread operator
