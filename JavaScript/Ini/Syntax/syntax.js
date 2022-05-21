@@ -288,3 +288,11 @@ Factorielle :
 4! = 4 * 3! = 24
 n! = n * (n-1)!
 /*
+
+function facto(n) {
+    if (n == 0) {
+        return n = 1;
+    }
+    return n * facto(n - 1); // problème de performance
+}
+console.log(facto(10)); // attention au dépassement de piles `stackOverflow`
