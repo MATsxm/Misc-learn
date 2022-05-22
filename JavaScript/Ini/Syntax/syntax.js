@@ -287,7 +287,7 @@ Factorielle :
 3! = 3 * 2! = 6
 4! = 4 * 3! = 24
 n! = n * (n-1)!
-/*
+*/
 
 function facto(n) {
     if (n == 0) {
