@@ -296,3 +296,5 @@ function facto(n) {
     return n * facto(n - 1); // problème de performance
 }
 console.log(facto(10)); // attention au dépassement de piles `stackOverflow`
+
+// 21.Passage de paramètres
