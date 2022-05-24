@@ -298,3 +298,6 @@ function facto(n) {
 console.log(facto(10)); // attention au dépassement de piles `stackOverflow`
 
 // 21.Passage de paramètres
+
+
+A SUIVRE
