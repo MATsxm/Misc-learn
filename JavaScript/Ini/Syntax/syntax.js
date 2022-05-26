@@ -306,4 +306,6 @@ let n = 3;
 f1(n);
 console.log(n);
 
+// Passage par référenc d'un objet
+
 A SUIVRE
