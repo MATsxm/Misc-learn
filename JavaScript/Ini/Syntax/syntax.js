@@ -306,6 +306,12 @@ let n = 3;
 f1(n);
 console.log(n);
 
-// Passage par référenc d'un objet
+// Passage par référence d'un objet
+function f2(tab) {
+    tab[0]++;
+}
+let tab = [3];
+f2(tab);
+console.log(tab);
 
 A SUIVRE
