@@ -314,4 +314,5 @@ let tab = [3];
 f2(tab);
 console.log(tab);
 
-A SUIVRE
+
+
